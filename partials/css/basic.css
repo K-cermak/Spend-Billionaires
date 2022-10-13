@@ -1,0 +1,42 @@
+.people .card-img-top {
+    width: 100%;
+    height: 15vw;
+    object-fit: cover;
+}
+
+.selectedPerson, .personPortfolio {
+    display: flex;
+    flex-direction: row;
+}
+
+.selectedPerson {
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.personInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 20px;
+}
+
+.personPortfolio img {
+    border-radius: 50%;
+    max-width: 100px;
+}
+
+.personButton {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+    .selectLogo {
+        width: 80%;
+    }
+    .people .card-img-top {
+        height: auto;
+    }
+}

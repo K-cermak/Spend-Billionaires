@@ -1,0 +1,14 @@
+{
+    "item1": {
+        "name": "Flat Rent",
+        "price": "2200",
+        "description": "Average New York flat rent price",
+        "image": "test.jpg"
+    },
+    "item2": {
+        "name": "item2",
+        "price": "200",
+        "description": "item2 description",
+        "image": "test.jpg"
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "person1": {
+        "name": "Elon Musk",
+        "money": 250500000000,
+        "image": "partials/img/elon_musk.jpg"
+    },
+    "person2": {
+        "name": "Jeff Bezos",
+        "money": 151900000000,
+        "image": "partials/img/jeff_bezos.jpg"
+    },
+    "person3": {
+        "name": "Bill Gates",
+        "money": 106300000000,
+        "image": "partials/img/bill_gates.jpg"
+    },
+    "person4": {
+        "name": "Warren Buffett",
+        "money": 96700000000,
+        "image": "partials/img/warren_buffett.jpg"
+    },
+    "person5": {
+        "name": "Mark Zuckerberg",
+        "money": 57700000000,
+        "image": "partials/img/mark_zuckerberg.jpg"
+    }
+}
