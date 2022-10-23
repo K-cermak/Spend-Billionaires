@@ -15,41 +15,39 @@
     <script src="https://mirror.k-cermak.com/data/gdpr/gdpr-v2.js"></script>
     <script>languageGdprSetting("en");addGooogleAnalytics("G-F0XEW80ERV");</script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link href="partials/css/basic.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-dark-5@1.1.3/dist/css/bootstrap-nightfall.min.css" rel="stylesheet">
 </head>
 <body class="d-flex flex-column min-vh-100">
-    <div class="row mx-auto my-2 justify-content-center people">
-        <div class="container-fluid my-5">
-            <div class="row">
-                <div class="col-12">
-                    <div class="logo d-flex justify-content-center">
-                        <img src="https://mirror.k-cermak.com/data/logo-v3/logo-spendbillionaires.svg" alt="Spend Billionaires logo" width="20%" class="selectLogo">
-                    </div>
-                </div>
-            </div>
-        </div>
+
+    <style>
+        @media (max-width: 768px) {
+            footer h6, footer p {
+                text-align: center !important;
+            }
+            footer p.p-0.m-0 {
+                margin-top: 20px !important;
+            }
+        }
+        @media only print {
+            .closeIcon, footer {
+                display: none !important;
+            }
+        }
+    </style>
+
+    <div class="d-flex justify-content-end closeIcon p-3">
+        <span class="btn btn-outline-danger" style="position: absolute;" role="button" aria-pressed="true"><i class="bi bi-x-lg"></i></span>
     </div>
 
-    <div class="selectedPerson d-none fixed-top">
-        <div class="personPortfolio">
-            <img src="" alt="" width="100%" class="selectedPersonPhoto">
+    <h2 class="p-3">Receipt for <span class="selectedPersonName"></span>:</h2>
 
-            <div class="personInfo">
-                <h2 class="selectedPersonName"></h2>
-                <h4>Money left: <b class="selectedPersonMoney"></b> $</h4>
-            </div>
-        </div>
-        <div class="personButton">
-            <button type="button" class="btn btn-primary receipt">Get Receipt</button>
-            <button type="button" class="btn btn-danger reset">Reset</button>
-        </div>
-    </div>
+    <div class="receiptItems p-3"></div>
 
-    <div class="row mx-auto my-2 mb-5 justify-content-center itemsForSale d-none">
-        <h1 class="text-center mt-5 mb-3">Items to sale:</h1>
-    </div>
+    <h4 class="my-5 p-3">Total: <b class="totalPrice"></b> $.</h4>
+
+
 
     <footer class="bg-dark bg-dark text-lg-start mt-auto p-3 mb-0">
         <div class="row">
@@ -62,8 +60,7 @@
         </div>
     </footer>
 
-
-    <script src="partials/js/basic.js"></script>
+    <script src="partials/js/receipt.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>

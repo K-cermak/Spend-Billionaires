@@ -1,14 +1,140 @@
 {
     "item1": {
-        "name": "Flat Rent",
+        "name": "Flat Rent in New York",
         "price": "2200",
         "description": "Average New York flat rent price",
-        "image": "test.jpg"
+        "image": "partials/img/items/item1.jpg"
     },
     "item2": {
-        "name": "item2",
-        "price": "200",
-        "description": "item2 description",
-        "image": "test.jpg"
+        "name": "Flat Rent in Romania",
+        "price": "235",
+        "description": "Average Romania flat rent price",
+        "image": "partials/img/items/item2.jpg"
+    },
+    "item3": {
+        "name": "House in London",
+        "price": "588506",
+        "description": "Average house price in London",
+        "image": "partials/img/items/item3.jpg"
+    },
+    "item4": {
+        "name": "Airbus A380",
+        "price": "450000000",
+        "description": "The largest passenger aircraft in the world.",
+        "image": "partials/img/items/item4.jpg"
+    },
+    "item5": {
+        "name": "Boeing 787-9",
+        "price": "189000000",
+        "description": "Boeing 787-9 Dreamliner is one of the most modern aircraft.",
+        "image": "partials/img/items/item5.jpg"
+    },
+    "item6": {
+        "name": "Cessna 172",
+        "price": "200000",
+        "description": "Low budget aircraft.",
+        "image": "partials/img/items/item6.jpg"
+    },
+    "item7": {
+        "name": "Bombardier Global 6000",
+        "price": "64300000",
+        "description": "Private Jet, make yourself comfortable.",
+        "image": "partials/img/items/item7.jpg"
+    },
+    "item8": {
+        "name": "Eurocopter EC130",
+        "price": "1475000",
+        "description": "Do you prefer the helicopter?",
+        "image": "partials/img/items/item8.jpg"
+    },
+    "item9": {
+        "name": "Toyota RAV4",
+        "price": "26525",
+        "description": "Basic Toyota car.",
+        "image": "partials/img/items/item9.jpg"
+    },
+    "item10": {
+        "name": "Tesla Model S",
+        "price": "106440",
+        "description": "From Elon..",
+        "image": "partials/img/items/item10.jpg"
+    },
+    "item11": {
+        "name": "Porsche Taycan",
+        "price": "88150",
+        "description": "Cool electric car.",
+        "image": "partials/img/items/item11.jpg"
+    },
+    "item12": {
+        "name": "Lamborghini Huracan",
+        "price": "248295",
+        "description": "If you want to impress.",
+        "image": "partials/img/items/item12.jpg"
+    },
+    "item13": {
+        "name": "Cadillac Escalade Limousine ",
+        "price": "219000",
+        "description": "It' s a comfort.",
+        "image": "partials/img/items/item13.jpg"
+    },
+    "item14": {
+        "name": "Polar Bear",
+        "price": "15000",
+        "description": "Just a white bear...",
+        "image": "partials/img/items/item14.jpg"
+    },
+    "item15": {
+        "name": "Shark",
+        "price": "50000",
+        "description": "Blum blum.",
+        "image": "partials/img/items/item15.jpg"
+    },
+    "item16": {
+        "name": "Lion",
+        "price": "100000",
+        "description": "If you have the courage...",
+        "image": "partials/img/items/item16.jpg"
+    },
+    "item17": {
+        "name": "Cruise Ship",
+        "price": "669000000",
+        "description": "Let's have a party..",
+        "image": "partials/img/items/item17.jpg"
+    },
+    "item18": {
+        "name": "Coca-Cola Coke",
+        "price": "1",
+        "description": "Just a normal coke.",
+        "image": "partials/img/items/item18.jpg"
+    },
+    "item19": {
+        "name": "Pizza",
+        "price": "10",
+        "description": "Hmmm, how Italian.",
+        "image": "partials/img/items/item19.jpg"
+    },
+    "item20": {
+        "name": "Bottle of Wine",
+        "price": "15",
+        "description": "Let's get drunk.",
+        "image": "partials/img/items/item20.jpg"
+    },
+    "item21": {
+        "name": "Louis Vuitton Bag",
+        "price": "5100",
+        "description": "Louis Vuitton Architettura Capucines BB",
+        "image": "partials/img/items/item21.jpg"
+    },
+    "item22": {
+        "name": "Rolex Watch",
+        "price": "34000",
+        "description": "Rolex Day-Date",
+        "image": "partials/img/items/item22.jpg"
+    },
+    "item23": {
+        "name": "Nuclear Power Plant",
+        "price": "7000000000",
+        "description": "Do you want a repeat of Chernobyl?",
+        "image": "partials/img/items/item23.jpg"
     }
 }
