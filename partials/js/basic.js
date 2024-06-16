@@ -1,9 +1,80 @@
+var modalId = 0;
+var soundActive = true;
+
+var resetModal = {
+    global : {
+        closable : true,
+        size : "md",
+        scrollable : false,
+        position : "center",
+    },
+    header : {
+        title : "Reset",
+        closeButton: true,
+    },
+    main : {
+        content : "Are you sure you want to reset your progress?",
+    },
+    footer : {
+        buttons : {
+            close : {
+                text : "Cancel",
+                type : "secondary",
+                function : "close",
+            },
+            function : {
+                text : "<i class='bi bi-arrow-counterclockwise ms-0 me-1'></i> Reset",
+                type : "danger",
+                function : "function",
+                dataset : function() {
+                    document.querySelector(".selectedPerson").classList.add("d-none");
+                    document.querySelector(".itemsForSale").classList.add("d-none");
+                    document.querySelector(".people").style.display = "flex";
+                    closeModal(modalId);
+                }
+            }
+        }
+    }
+}
+
+var receiptModal = {
+    global : {
+        closable : true,
+        size : "lg",
+        scrollable : true,
+        position : "center",
+    },
+    header : {
+        title : "Receipt",
+        closeButton: true,
+    },
+    main : {
+        content : "<iframe src='receipt.html' style='width: 100%; height: 100%; border: none;'></iframe>",
+    },
+    footer : {
+        buttons : {
+            close : {
+                text : "Close",
+                type : "secondary",
+                function : "close",
+            },
+            function : {
+                text : "<i class='bi bi-printer ms-0 me-1'></i> Print",
+                type : "primary",
+                function : "function",
+                dataset : function() {
+                    document.querySelector("iframe").contentWindow.print();
+                }
+            }
+        }
+    }
+}
+
+
 //when page load
 window.addEventListener('load', function () {
     document.querySelector(".reset").addEventListener("click", function () {
-        document.querySelector(".selectedPerson").classList.add("d-none");
-        document.querySelector(".itemsForSale").classList.add("d-none");
-        document.querySelector(".people").style.display = "flex";
+        modalId = genModal(resetModal);
     });
 
     document.querySelector(".receipt").addEventListener("click", function () {
@@ -12,11 +83,24 @@ window.addEventListener('load', function () {
 
         //save selected name
         sessionStorage.setItem("selectedName", document.querySelector(".selectedPersonName").innerHTML);
-
-
-        //go to receipt page on new tab
-        window.open("receipt.html", "_blank");
+        
+        let id = genModal(receiptModal);
+        document.querySelector("#" + id + " .modal-content").style.height = "80%";
+        document.querySelector("#" + id + " .modal-body").style.overflowY = "hidden";
     });
+
+    document.querySelector(".soundButton").addEventListener("click", function () {
+        soundActive = !soundActive;
+        if (soundActive) {
+            document.querySelector(".soundButton i").classList.add("bi-volume-up");
+            document.querySelector(".soundButton i").classList.remove("bi-volume-mute");
+        } else {
+            document.querySelector(".soundButton i").classList.add("bi-volume-mute");
+            document.querySelector(".soundButton i").classList.remove("bi-volume-up");
+        }
+    });
+
+    document.querySelector(".currentYear").innerHTML = new Date().getFullYear();
 });
 
 var currentMoney = 0;
@@ -46,6 +130,7 @@ fetch('partials/json/people.json')
             personDiv.querySelector('span').addEventListener('click', () => {
                 boughtThings = [];
                 currentMoney = person.money;
+                document.querySelector(".selectedPersonMoney").classList.remove('text-danger');
 
                 document.querySelector(".selectedPersonPhoto").src = person.image;
                 document.querySelector(".selectedPersonPhoto").setAttribute("alt", person.name);
@@ -85,18 +170,29 @@ fetch('partials/json/items.json')
                 </div>
             `;
             itemDiv.querySelector('span').addEventListener('click', () => {
-                //change button to green
-                itemDiv.querySelector('span').classList.add('btn-success');
+                //play sound
+                if (soundActive) {
+                    let audio;
+                    if (Math.random() < 0.5) {
+                        audio = new Audio('partials/sounds/cash1.mp3');
+                    } else {
+                        audio = new Audio('partials/sounds/cash2.mp3');
+                    }
+                    audio.play();
+                }
+
+
+                //change button to darker
+                itemDiv.querySelector('span').style.backgroundColor = "#064b94";
                 //change button back to blue
                 setTimeout(() => {
-                    itemDiv.querySelector('span').classList.remove('btn-success');
+                    itemDiv.querySelector('span').removeAttribute("style");
                 }, 300);
 
 
                 currentMoney -= item.price;
                 document.querySelector(".selectedPersonMoney").innerHTML = currentMoney.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
 
-                //if money is less than 0
                 if (currentMoney < 0) {
                     document.querySelector(".selectedPersonMoney").classList.add('text-danger');
                 }

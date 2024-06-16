@@ -1,27 +1,52 @@
 {
     "person1": {
         "name": "Elon Musk",
-        "money": 250500000000,
+        "money": 210200000000,
         "image": "partials/img/people/elon_musk.jpg"
     },
     "person2": {
         "name": "Jeff Bezos",
-        "money": 151900000000,
+        "money": 200600000000,
         "image": "partials/img/people/jeff_bezos.jpg"
     },
     "person3": {
         "name": "Bill Gates",
-        "money": 106300000000,
+        "money": 132600000000,
         "image": "partials/img/people/bill_gates.jpg"
     },
     "person4": {
         "name": "Warren Buffett",
-        "money": 96700000000,
+        "money": 133500000000,
         "image": "partials/img/people/warren_buffett.jpg"
     },
     "person5": {
         "name": "Mark Zuckerberg",
-        "money": 57700000000,
+        "money": 176700000000,
         "image": "partials/img/people/mark_zuckerberg.jpg"
+    },
+    "person6": {
+        "name": "Larry Page",
+        "money": 145000000000,
+        "image": "partials/img/people/larry_page.jpg"
+    },
+    "person7": {
+        "name": "Donald Trump",
+        "money": 6100000000,
+        "image": "partials/img/people/donald_trump.jpg"
+    },
+    "person8": {
+        "name": "Tim Cook",
+        "money": 2200000000,
+        "image": "partials/img/people/tim_cook.jpg"
+    },
+    "person9": {
+        "name": "Taylor Swift",
+        "money": 1300000000,
+        "image": "partials/img/people/taylor_swift.jpg"
+    },
+    "person10": {
+        "name": "MrBeast",
+        "money": 500000000,
+        "image": "partials/img/people/mrbeast.jpg"
     }
 }

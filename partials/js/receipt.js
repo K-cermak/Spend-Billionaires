@@ -1,14 +1,16 @@
 window.addEventListener('load', function () {
-    document.querySelector(".closeIcon").addEventListener("click", function (e) {
-        close();
-    });
-
     //load data from local storage and console it   
     var boughtThings = JSON.parse(sessionStorage.getItem("boughtItems"));
 
     document.querySelector(".selectedPersonName").innerHTML = sessionStorage.getItem("selectedName");;
 
     let totalPrice = 0;
+
+    //if boughtThings is not null
+
+    if (boughtThings == null) {
+        boughtThings = [];
+    }
 
     //print to .receiptItems
     boughtThings.forEach(item => {

@@ -1,14 +1,25 @@
+body {
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+main {
+    flex: 1;
+}
+footer a {
+    color: #649aec;
+    transition: .1s;
+}
+footer a:hover {
+    color: #3f7fdf;
+}
+
 .people .card-img-top {
     width: 100%;
     height: 15vw;
     object-fit: cover;
 }
-
-.selectedPerson, .personPortfolio {
-    display: flex;
-    flex-direction: row;
-}
-
 .selectedPerson {
     justify-content: space-between;
     margin: 20px;
@@ -16,42 +27,79 @@
     margin: 0;
     padding: 10px 20px;
 }
-
+.selectedPerson, .personPortfolio {
+    display: flex;
+    flex-direction: row;
+}
+.personPortfolio img {
+    border-radius: 50%;
+    max-width: 100px;
+}
 .personInfo {
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin-left: 20px;
 }
-
-.personPortfolio img {
-    border-radius: 50%;
-    max-width: 100px;
-}
-
 .personButton {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 }
-
 .personButton * {
     margin: 0 10px;
 }
+.itemsForSale {
+    margin-top: 8% !important;    
+}
+
+@media (max-width: 1024px) {
+    .selectLogo {
+        width: 60%;
+    }
+    .itemsForSale {
+        margin-top: 15% !important;    
+    }
+}
 
 @media (max-width: 768px) {
-    footer h6, footer p {
-        text-align: center !important;
-    }
-    footer p.p-0.m-0 {
-        margin-top: 20px !important;
-    }
-    
     .selectLogo {
         width: 80%;
     }
+    .itemsForSale {
+        margin-top: 25% !important;    
+    }
+    .selectedPerson {
+        display: flex;
+        flex-direction: column;
+    }
+    .selectedPersonPhoto {
+        height: 70px;
+        width: 70px;
+    }
+    .personButton {
+        margin-top: 20px;
+    }
+    .personInfo h4 {
+        font-size: 1.1rem;
+    }
+    .personPortfolio {
+        justify-content: center;
+    }
+    .personPortfolio .selectedPersonName {
+        text-align: center;
+    }
     .people .card-img-top {
         height: auto;
+    }
+    footer, .othersProjects {
+        text-align: center !important;
+    }
+}
+
+@media (max-width: 576px) {
+    .itemsForSale {
+        margin-top: 50% !important;    
     }
 }
