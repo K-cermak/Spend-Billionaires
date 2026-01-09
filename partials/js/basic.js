@@ -123,7 +123,7 @@ fetch('partials/json/people.json')
                 <img src="${person.image}" class="card-img-top" alt="${person.name} photo">
                 <div class="card-body">
                     <h5 class="card-title">${person.name}</h5>
-                    <p class="card-text"><b>${person.money / 1000000000 }</b> billion $</p>
+                    <p class="card-text"><b>$ ${person.money / 1000000000 }</b> billion</p>
                     <span class="btn btn-primary stretched-link">Choose ${person.name}</span>
                 </div>
             `;
@@ -165,7 +165,7 @@ fetch('partials/json/items.json')
                 <div class="card-body">
                     <h5 class="card-title">${item.name}</h5>
                     <p class="card-text">${item.description}</p>
-                    <p class="card-text"><b>${newMoney}</b> $</p>
+                    <p class="card-text"><b>$ ${newMoney}</b></p>
                     <span class="btn btn-primary stretched-link">Buy ${item.name}</span>
                 </div>
             `;

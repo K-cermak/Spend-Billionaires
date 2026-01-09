@@ -22,13 +22,13 @@ window.addEventListener('load', function () {
         itemDiv.style = 'width: 18rem;';
         itemDiv.innerHTML = `
                 <h5>${item[0]}</h5>
-                <p>&nbsp; - ${item[1]} $</p>
+                <p>&nbsp; - $ ${item[1]}</p>
         `;
         document.querySelector('.receiptItems').appendChild(itemDiv);
     });
 
     if (totalPrice == 0) {
-        document.querySelector(".receiptItems").innerHTML = "You didn't buy anything";
+        document.querySelector(".receiptItems").innerHTML = "You didn't buy anything.";
     }
 
     document.querySelector(".totalPrice").innerHTML = totalPrice.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
