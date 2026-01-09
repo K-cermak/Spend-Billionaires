@@ -1,52 +1,72 @@
 {
     "person1": {
         "name": "Elon Musk",
-        "money": 210200000000,
+        "money": 713200000000,
         "image": "partials/img/people/elon_musk.jpg"
     },
     "person2": {
         "name": "Jeff Bezos",
-        "money": 200600000000,
+        "money": 252000000000,
         "image": "partials/img/people/jeff_bezos.jpg"
     },
     "person3": {
-        "name": "Bill Gates",
-        "money": 132600000000,
-        "image": "partials/img/people/bill_gates.jpg"
+        "name": "Larry Page",
+        "money": 263800000000,
+        "image": "partials/img/people/larry_page.jpg"
     },
     "person4": {
-        "name": "Warren Buffett",
-        "money": 133500000000,
-        "image": "partials/img/people/warren_buffett.jpg"
-    },
-    "person5": {
         "name": "Mark Zuckerberg",
-        "money": 176700000000,
+        "money": 225500000000,
         "image": "partials/img/people/mark_zuckerberg.jpg"
     },
+    "person5": {
+        "name": "Warren Buffett",
+        "money": 147000000000,
+        "image": "partials/img/people/warren_buffett.jpg"
+    },
     "person6": {
-        "name": "Larry Page",
-        "money": 145000000000,
-        "image": "partials/img/people/larry_page.jpg"
+        "name": "Bill Gates",
+        "money": 103500000000,
+        "image": "partials/img/people/bill_gates.jpg"
     },
     "person7": {
         "name": "Donald Trump",
-        "money": 6100000000,
+        "money": 5100000000,
         "image": "partials/img/people/donald_trump.jpg"
     },
     "person8": {
         "name": "Tim Cook",
-        "money": 2200000000,
+        "money": 2600000000,
         "image": "partials/img/people/tim_cook.jpg"
     },
     "person9": {
-        "name": "Taylor Swift",
-        "money": 1300000000,
-        "image": "partials/img/people/taylor_swift.jpg"
+        "name": "Sam Altman",
+        "money": 2200000000,
+        "image": "partials/img/people/sam_altman.jpg"
     },
     "person10": {
+        "name": "Taylor Swift",
+        "money": 1600000000,
+        "image": "partials/img/people/taylor_swift.jpg"
+    },
+    "person11": {
+        "name": "Christiano Ronaldo",
+        "money": 1400000000,
+        "image": "partials/img/people/cristiano_ronaldo.jpg"
+    },
+    "person12": {
         "name": "MrBeast",
-        "money": 500000000,
+        "money": 1000000000,
         "image": "partials/img/people/mrbeast.jpg"
+    },
+    "person13": {
+        "name": "The Weeknd",
+        "money": 600000000,
+        "image": "partials/img/people/the_weeknd.jpg"
+    },
+    "person14": {
+        "name": "Ed Sheeran",
+        "money": 370000000,
+        "image": "partials/img/people/ed_sheeran.jpg"
     }
 }
