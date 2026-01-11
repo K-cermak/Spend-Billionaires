@@ -1,70 +1,70 @@
 {
-    "person1": {
+    "person_061cf": {
         "name": "Elon Musk",
         "money": 713200000000,
         "image": "partials/img/people/elon_musk.jpg"
     },
-    "person2": {
+    "person_9b2d8": {
         "name": "Jeff Bezos",
         "money": 252000000000,
         "image": "partials/img/people/jeff_bezos.jpg"
     },
-    "person3": {
+    "person_0f60c": {
         "name": "Larry Page",
         "money": 263800000000,
         "image": "partials/img/people/larry_page.jpg"
     },
-    "person4": {
+    "person_44128": {
         "name": "Mark Zuckerberg",
         "money": 225500000000,
         "image": "partials/img/people/mark_zuckerberg.jpg"
     },
-    "person5": {
+    "person_8b5f8": {
         "name": "Warren Buffett",
         "money": 147000000000,
         "image": "partials/img/people/warren_buffett.jpg"
     },
-    "person6": {
+    "person_e8575": {
         "name": "Bill Gates",
         "money": 103500000000,
         "image": "partials/img/people/bill_gates.jpg"
     },
-    "person7": {
+    "person_fc6b2": {
         "name": "Donald Trump",
         "money": 5100000000,
         "image": "partials/img/people/donald_trump.jpg"
     },
-    "person8": {
+    "person_b52f6": {
         "name": "Tim Cook",
         "money": 2600000000,
         "image": "partials/img/people/tim_cook.jpg"
     },
-    "person9": {
+    "person_7ab74": {
         "name": "Sam Altman",
         "money": 2200000000,
         "image": "partials/img/people/sam_altman.jpg"
     },
-    "person10": {
+    "person_e0bff": {
         "name": "Taylor Swift",
         "money": 1600000000,
         "image": "partials/img/people/taylor_swift.jpg"
     },
-    "person11": {
+    "person_7e4ad": {
         "name": "Christiano Ronaldo",
         "money": 1400000000,
         "image": "partials/img/people/cristiano_ronaldo.jpg"
     },
-    "person12": {
+    "person_087b3": {
         "name": "MrBeast",
         "money": 1000000000,
         "image": "partials/img/people/mrbeast.jpg"
     },
-    "person13": {
+    "person_53fcb": {
         "name": "The Weeknd",
         "money": 600000000,
         "image": "partials/img/people/the_weeknd.jpg"
     },
-    "person14": {
+    "person_d6322": {
         "name": "Ed Sheeran",
         "money": 370000000,
         "image": "partials/img/people/ed_sheeran.jpg"

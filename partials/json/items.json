@@ -1,140 +1,193 @@
 {
-    "item1": {
+    "item_6c4a5": {
+        "name": "Private Island",
+        "price": "30000000",
+        "description": "Own your private island getaway.",
+        "image": "partials/img/items/private_island.jpg"
+    },
+    "item_cd856": {
+        "name": "Cruise Ship",
+        "price": "669000000",
+        "description": "Let's have a party!",
+        "image": "partials/img/items/cruise_ship.jpg"
+    },
+    "item_a376a": {
+        "name": "Nuclear Power Plant",
+        "price": "15000000000",
+        "description": "Do you want a repeat of Chernobyl?",
+        "image": "partials/img/items/nuclear_power_plant.jpg"
+    },
+
+    "item_8a7d4": {
+        "name": "McDonald's Franchise",
+        "price": "1500000",
+        "description": "Own your own McDonald's restaurant.",
+        "image": "partials/img/items/mcdonalds_franchise.jpg"
+    },
+    "item_da031": {
         "name": "Flat Rent in New York",
-        "price": "2200",
-        "description": "Average New York flat rent price",
-        "image": "partials/img/items/item1.jpg"
+        "price": "4000",
+        "description": "Average New York flat rent price per month.",
+        "image": "partials/img/items/flat_ny.jpg"
     },
-    "item2": {
+    "item_eb503": {
         "name": "Flat Rent in Romania",
-        "price": "235",
-        "description": "Average Romania flat rent price",
-        "image": "partials/img/items/item2.jpg"
+        "price": "250",
+        "description": "Average Romania flat rent price per month.",
+        "image": "partials/img/items/flat_romania.jpg"
     },
-    "item3": {
+    "item_4de66": {
         "name": "House in London",
-        "price": "588506",
-        "description": "Average house price in London",
-        "image": "partials/img/items/item3.jpg"
+        "price": "660000",
+        "description": "Average house price in London.",
+        "image": "partials/img/items/house_london.jpg"
     },
-    "item4": {
+
+    "item_efb12": {
+        "name": "M1 Abrams",
+        "price": "10660000",
+        "description": "Main battle tank used by the U.S. Army.",
+        "image": "partials/img/items/m1_abrams.jpg"
+    },
+    "item_83a2d": {
         "name": "Airbus A380",
         "price": "450000000",
         "description": "The largest passenger aircraft in the world.",
-        "image": "partials/img/items/item4.jpg"
+        "image": "partials/img/items/airbus_a380.jpg"
     },
-    "item5": {
+    "item_d9247": {
         "name": "Boeing 787-9",
-        "price": "189000000",
+        "price": "293000000",
         "description": "Boeing 787-9 Dreamliner is one of the most modern aircraft.",
-        "image": "partials/img/items/item5.jpg"
+        "image": "partials/img/items/boeing_787.jpg"
     },
-    "item6": {
-        "name": "Cessna 172",
-        "price": "200000",
-        "description": "Low budget aircraft.",
-        "image": "partials/img/items/item6.jpg"
-    },
-    "item7": {
+    "item_dcac0": {
         "name": "Bombardier Global 6000",
-        "price": "64300000",
+        "price": "21000000",
         "description": "Private Jet, make yourself comfortable.",
-        "image": "partials/img/items/item7.jpg"
+        "image": "partials/img/items/bombardier_global_6000.jpg"
     },
-    "item8": {
+    "item_1e0da": {
         "name": "Eurocopter EC130",
-        "price": "1475000",
-        "description": "Do you prefer the helicopter?",
-        "image": "partials/img/items/item8.jpg"
+        "price": "1900000",
+        "description": "Do you prefer a helicopter?",
+        "image": "partials/img/items/eurocopter_ec130.jpg"
     },
-    "item9": {
+    "item_61227": {
         "name": "Toyota RAV4",
-        "price": "26525",
+        "price": "29800",
         "description": "Basic Toyota car.",
-        "image": "partials/img/items/item9.jpg"
+        "image": "partials/img/items/toyota_rav4.jpg"
     },
-    "item10": {
+    "item_ccc65": {
         "name": "Tesla Model S",
-        "price": "106440",
-        "description": "From Elon..",
-        "image": "partials/img/items/item10.jpg"
+        "price": "84990",
+        "description": "From Elon.",
+        "image": "partials/img/items/tesla_model_s.jpg"
     },
-    "item11": {
+    "item_9efd9": {
         "name": "Porsche Taycan",
-        "price": "88150",
+        "price": "103900",
         "description": "Cool electric car.",
-        "image": "partials/img/items/item11.jpg"
+        "image": "partials/img/items/porsche_taycan.jpg"
     },
-    "item12": {
+    "item_00da0": {
         "name": "Lamborghini Huracan",
-        "price": "248295",
+        "price": "250000",
         "description": "If you want to impress.",
-        "image": "partials/img/items/item12.jpg"
+        "image": "partials/img/items/lamborghini_huracan.jpg"
     },
-    "item13": {
-        "name": "Cadillac Escalade Limousine ",
+    "item_3897a": {
+        "name": "Cadillac Escalade Limousine",
         "price": "219000",
-        "description": "It' s a comfort.",
-        "image": "partials/img/items/item13.jpg"
+        "description": "It's about comfort.",
+        "image": "partials/img/items/cadillac_escalade_limousine.jpg"
     },
-    "item14": {
+
+    "item_f57d2": {
         "name": "Polar Bear",
         "price": "15000",
-        "description": "Just a white bear...",
-        "image": "partials/img/items/item14.jpg"
+        "description": "Just a white bear.",
+        "image": "partials/img/items/polar_bear.jpg"
     },
-    "item15": {
+    "item_f6c42": {
         "name": "Shark",
         "price": "50000",
         "description": "Blum blum.",
-        "image": "partials/img/items/item15.jpg"
+        "image": "partials/img/items/shark.jpg"
     },
-    "item16": {
+    "item_d0c48": {
         "name": "Lion",
         "price": "100000",
         "description": "If you have the courage...",
-        "image": "partials/img/items/item16.jpg"
+        "image": "partials/img/items/lion.jpg"
     },
-    "item17": {
-        "name": "Cruise Ship",
-        "price": "669000000",
-        "description": "Let's have a party..",
-        "image": "partials/img/items/item17.jpg"
+
+    "item_d007b": {
+        "name": "Louis Vuitton Bag",
+        "price": "6100",
+        "description": "Louis Vuitton Architettura Capucines BB.",
+        "image": "partials/img/items/louis_vuitton_bag.jpg"
     },
-    "item18": {
+    "item_c5e48": {
+        "name": "Rolex Watch",
+        "price": "36000",
+        "description": "Rolex Day-Date",
+        "image": "partials/img/items/rolex_watch.jpg"
+    },
+    "item_7f4e2": {
+        "name": "Netflix Subscription (1 Year)",
+        "price": "220",
+        "description": "Enjoy movies and series for a year.",
+        "image": "partials/img/items/netflix_subscription.jpg"
+    },
+    "item_927f1": {
+        "name": "Lego Millennium Falcon",
+        "price": "849",
+        "description": "Detailed Lego model of the Millennium Falcon from Star Wars.",
+        "image": "partials/img/items/lego_millennium_falcon.jpg"
+    },
+    "item_2f3c9": {
+        "name": "iPhone 17 Pro",
+        "price": "1099",
+        "description": "Apple iPhone cellphone with advanced features.",
+        "image": "partials/img/items/iphone_17_pro.jpg"
+    },
+    "item_5b9e1": {
+        "name": "Apple AirPods Pro 3",
+        "price": "249",
+        "description": "Wireless earbuds from Apple.",
+        "image": "partials/img/items/apple_airpods_pro.jpg"
+    },
+    "item_bf9e3": {
+        "name": "Apple Mac Pro Wheels Kit",
+        "price": "699",
+        "description": "Most expensive wheels for your Mac Pro.",
+        "image": "partials/img/items/apple_wheels.jpg"
+    },
+
+     "item_c0a5b": {
+        "name": "Big Mac",
+        "price": "5",
+        "description": "Classic Big Mac from McDonald's.",
+        "image": "partials/img/items/big_mac.jpg"
+    },
+    "item_accf3": {
         "name": "Coca-Cola Coke",
         "price": "1",
         "description": "Just a normal coke.",
-        "image": "partials/img/items/item18.jpg"
+        "image": "partials/img/items/coca_cola_coke.jpg"
     },
-    "item19": {
+    "item_1b8d7": {
         "name": "Pizza",
-        "price": "10",
-        "description": "Hmmm, how Italian.",
-        "image": "partials/img/items/item19.jpg"
+        "price": "18",
+        "description": "Mamma Mia!",
+        "image": "partials/img/items/pizza.jpg"
     },
-    "item20": {
+    "item_b2ace": {
         "name": "Bottle of Wine",
-        "price": "15",
-        "description": "Let's get drunk.",
-        "image": "partials/img/items/item20.jpg"
-    },
-    "item21": {
-        "name": "Louis Vuitton Bag",
-        "price": "5100",
-        "description": "Louis Vuitton Architettura Capucines BB",
-        "image": "partials/img/items/item21.jpg"
-    },
-    "item22": {
-        "name": "Rolex Watch",
-        "price": "34000",
-        "description": "Rolex Day-Date",
-        "image": "partials/img/items/item22.jpg"
-    },
-    "item23": {
-        "name": "Nuclear Power Plant",
-        "price": "7000000000",
-        "description": "Do you want a repeat of Chernobyl?",
-        "image": "partials/img/items/item23.jpg"
+        "price": "20",
+        "description": "It's wine o'clock!",
+        "image": "partials/img/items/bottle_of_wine.jpg"
     }
 }
