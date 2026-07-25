@@ -1,0 +1,90 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Montserrat", system-ui, sans-serif;
+    color: var(--sb-ink);
+    background-color: var(--sb-paper);
+    background-image:
+        repeating-linear-gradient(135deg, var(--sb-ink-a3) 0 1px, transparent 1px 9px);
+
+    /* Shopping mode: the hero and the picker step out of the way */
+    &.is-shopping {
+        .sb-hero,
+        .sb-section--people {
+            display: none;
+        }
+        
+        main {
+            padding-top: calc(var(--sb-pos-height) + 1.5rem);
+        }
+    }
+}
+
+::selection {
+    background: var(--sb-led);
+    color: var(--sb-ink);
+}
+
+a {
+    color: var(--sb-ink);
+    text-decoration-color: var(--sb-led);
+    text-decoration-thickness: 2px;
+    text-underline-offset: 3px;
+
+    &:hover {
+        color: var(--sb-cash-dark);
+    }
+}
+
+:focus-visible {
+    outline: 3px solid var(--sb-led);
+    outline-offset: 3px;
+    border-radius: 4px;
+}
+
+/* Shared small caps label, used as section eyebrow */
+.sb-eyebrow {
+    font-family: "Courier Prime", monospace;
+    font-size: .8rem;
+    font-weight: 700;
+    letter-spacing: .22em;
+    text-transform: uppercase;
+    color: var(--sb-muted);
+    margin: 0 0 .75rem;
+}
+
+/* Handwritten aside - used once per screen, on purpose */
+.sb-note {
+    display: block;
+    font-family: "Gaegu", cursive;
+    font-weight: 700;
+    font-size: .42em;
+    line-height: 1;
+    color: var(--sb-cash);
+    transform: rotate(-2.2deg);
+    margin-top: .45rem;
+}
+
+/* Empty state */
+.sb-empty {
+    width: 100%;
+    padding: 2.5rem 1.25rem;
+    border: 2px dashed var(--sb-line);
+    border-radius: var(--sb-radius);
+    text-align: center;
+    color: var(--sb-muted);
+    font-family: "Courier Prime", monospace;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    *, *::before, *::after {
+        animation-duration: .001ms !important;
+        transition-duration: .001ms !important;
+    }
+}

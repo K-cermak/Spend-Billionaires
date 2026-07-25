@@ -7,7 +7,7 @@
     <meta name="author" content="Karel Cermak">
     <meta name="description" content="Let's be a billionaire for a moment and try to spend their money.">
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <meta name="theme-color" content="#ffffff">
+    <meta name="theme-color" content="#0E1726">
 
     <link rel='icon' type='image/png' href='https://cdn.karlosoft.com/cdn-data/ks/img/fav/png-white-transparent.png' />
 
@@ -15,63 +15,84 @@
     <script src='https://cdn.karlosoft.com/cdn-data/ks/script/gdpr-settings.js'></script>
     <script src='https://cdn.jsdelivr.net/gh/K-cermak/Enplated-Framework@enp-v3/enp-loader.min.js'></script>
 
-    <link rel='stylesheet' href='partials/css/basic.css' />
+    <link rel='stylesheet' href='partials/css/main.css' />
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Gaegu:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body class="d-flex flex-column min-vh-100">
-    <header>
-        <div class="row mx-auto my-2 justify-content-center people">
-            <div class="container-fluid my-5">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="logo d-flex justify-content-center">
-                            <img src="https://cdn.karlosoft.com/cdn-data/ks/img/main/ks-billionaires.svg" alt="Spend Billionaires logo" width="30%" class="selectLogo">
-                        </div>
-                    </div>
+
+    <!-- Point-of-sale bar: appears once a fortune is picked -->
+    <div class="selectedPerson sb-pos d-none fixed-top">
+        <div class="sb-pos__inner">
+            <div class="personPortfolio sb-pos__who">
+                <img src="" alt="" class="selectedPersonPhoto sb-pos__photo">
+                <div class="personInfo">
+                    <h2 class="selectedPersonName sb-pos__name"></h2>
+                    <p class="sb-pos__label">Left to spend</p>
                 </div>
             </div>
+
+            <div class="sb-pos__readout">
+                <p class="sb-pos__amount"><span class="sb-pos__currency">$</span><b class="selectedPersonMoney">0</b></p>
+                <div class="sb-pos__meter" role="progressbar" aria-label="Share of the fortune spent" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+                    <span class="sb-pos__meter-fill"></span>
+                </div>
+                <p class="sb-pos__spent">Nothing spent yet</p>
+            </div>
+
+            <div class="personButton sb-pos__actions">
+                <button type="button" class="btn btn-secondary soundButton" aria-label="Mute cash sounds"><i class="bi bi-volume-up ms-0 me-0"></i></button>
+                <button type="button" class="btn btn-outline-light reset"><i class="bi bi-arrow-counterclockwise ms-0 me-1"></i> Start over</button>
+                <button type="button" class="btn btn-warning receipt"><i class="bi bi-receipt ms-0 me-1"></i> Receipt</button>
+            </div>
+        </div>
+    </div>
+
+    <header class="sb-hero">
+        <div class="sb-hero__inner">
+            <img src="https://cdn.karlosoft.com/cdn-data/ks/img/main/ks-billionaires-dark.svg" alt="Spend Billionaires" class="sb-hero__logo selectLogo">
+            <p class="sb-eyebrow">A spending simulator</p>
+            <h1 class="sb-hero__title">
+                Somebody has to spend it.
+                <span class="sb-note">might as well be you</span>
+            </h1>
+            <p class="sb-hero__lead">Pick a fortune, then buy whatever you like until the money runs out. It takes longer than you think.</p>
         </div>
     </header>
 
-    <main>
-        <div class="selectedPerson d-none fixed-top">
-            <div class="personPortfolio">
-                <img src="" alt="" width="100%" class="selectedPersonPhoto">
-
-                <div class="personInfo">
-                    <h2 class="selectedPersonName"></h2>
-                    <h4>Left to spend: $ <b class="selectedPersonMoney"></b></h4>
-                </div>
+    <main class="flex-grow-1">
+        <section class="sb-section sb-section--people">
+            <div class="sb-section__head">
+                <h2 class="sb-section__title">Choose a fortune</h2>
+                <p class="sb-section__meta peopleCount">Loading fortunes&hellip;</p>
             </div>
-            <div class="personButton">
-                <button type="button" class="btn btn-secondary soundButton"><i class="bi bi-volume-up ms-0 me-1"></i></button>
-                <button type="button" class="btn btn-danger reset"><i class="bi bi-arrow-counterclockwise ms-0 me-1"></i> Reset</button>
-                <button type="button" class="btn btn-primary receipt"><i class="bi bi-receipt ms-0 me-1"></i> Get Receipt</button>
-            </div>
-        </div>
+            <div class="row mx-auto justify-content-center people g-4"></div>
+        </section>
 
-        <div class="row mx-auto my-2 mb-5 justify-content-center itemsForSale d-none">
-            <h1 class="text-center mt-5 mb-3">Items to sale:</h1>
-        </div>
+        <section class="sb-section itemsForSale-wrap d-none">
+            <div class="sb-section__head">
+                <h2 class="sb-section__title">Everything is for sale</h2>
+                <p class="sb-section__meta">Tap an item as many times as you want. No refunds.</p>
+            </div>
+            <div class="row mx-auto justify-content-center itemsForSale g-4"></div>
+        </section>
     </main>
 
-    <footer class="w-100 py-4 flex-shrink-0 text-white mt-5" style="background-color:#31363F;">
-        <div class="pt-4 mx-5">
-            <div class="row gy-4 justify-content-center">
-                <div class="col-lg-3">
-                    <h5 class="h1">About</h5>
+    <footer class="sb-footer w-100 flex-shrink-0 text-white">
+        <div class="sb-footer__inner">
+            <div class="row gy-4">
+                <div class="col-lg-3 text-center text-lg-start">
+                    <h5 class="sb-footer__title">About</h5>
                     <p class="small">All rights reserved by Karlosoft by Karel Čermák. This site uses <a href='https://enplated.karlosoft.com/framework' target='_blank'>Enplated Framework</a>.</p>
-                    <p class="small mb-0">&copy; <span class="currentYear"></span></soan> by <a href="https://karlosoft.com" target="_blank">Karlosoft</a>, <a href="https://gdpr.karlosoft.com/?lang=en" target="_blank">GDPR Settings</a>.</p>
+                    <p class="small mb-0">&copy; <span class="currentYear"></span> by <a href="https://karlosoft.com" target="_blank">Karlosoft</a>, <a href="https://gdpr.karlosoft.com/?lang=en" target="_blank">GDPR Settings</a>.</p>
                 </div>
-                <div class="col-lg-6">
-                </div>
-
-                <div class="col-lg-3 text-end othersProjects">
+                <div class="col-lg-6"></div>
+                <div class="col-lg-3 text-center text-lg-end othersProjects">
                     <h5 class="mb-3">Other projects</h5>
                     <ul class="list-unstyled text-white">
                         <li><a href="https://mapgen.karlosoft.com" target="_blank">MapGen</a></li>

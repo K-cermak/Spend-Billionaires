@@ -1,5 +1,5 @@
 var enplatedSettingsCustom = {
-    useDarkMode : true,
+    useDarkMode : false,
     importFlash : false,
     importAOS : false,
     smartVars : {},

@@ -1,0 +1,65 @@
+:root {
+    /* Core Colors */
+    --sb-ink: #0E1726;
+    --sb-ink-soft: #2A3B52;
+    --sb-muted: #6B7A90;
+    --sb-paper: #E9ECF1;
+    --sb-card: #FFFFFF;
+    --sb-white: #FFFFFF;
+
+    /* Brand Colors */
+    --sb-led: #FFC247;
+    --sb-led-hover: #FFD37A;
+    --sb-cash: #0D6EFD;
+    --sb-cash-dark: #0A58CA;
+    --sb-alert: #E0402B;
+
+    /* Opacity Variants (Hex with Alpha) */
+    --sb-ink-a3: #0E172606; /* ~2% */
+    --sb-ink-a10: #0E17261A;
+    --sb-ink-a12: #0E17261F;
+    --sb-ink-a18: #0E17262E;
+    --sb-ink-a22: #0E172638;
+    --sb-ink-a35: #0E172659;
+    --sb-led-a35: #FFC24759;
+    --sb-led-a50: #FFC24780;
+    --sb-alert-a40: #E0402B66;
+    --sb-shadow-cash: #0C674373;
+    
+    --sb-white-a12: #FFFFFF1F;
+    --sb-white-a14: #FFFFFF24;
+    --sb-white-a30: #FFFFFF4D;
+    --sb-white-a50: #FFFFFF80;
+    --sb-white-a55: #FFFFFF8C;
+    --sb-white-a70: #FFFFFFB3;
+
+    /* Components */
+    --sb-line: var(--sb-ink-a12);
+    --sb-shadow: 0 12px 28px var(--sb-ink-a10);
+    --sb-shadow-lift: 0 18px 40px var(--sb-ink-a18);
+    --sb-radius: 14px;
+    --sb-pos-height: 96px;
+
+    /* Additional elements */
+    --sb-img-bg: #DDE2E9;
+
+    /* Receipt specific */
+    --sb-receipt-page-bg: #DDE1E7;
+    --sb-receipt-bg: #FCFBF7;
+    --sb-receipt-ink: #1B1B1B;
+    --sb-receipt-muted: #6A6459;
+    --sb-receipt-line: #C9C4B6;
+    --sb-receipt-line-soft: #D5D0C3;
+}
+
+@media (max-width: 991.98px) {
+    :root {
+        --sb-pos-height: 140px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    :root {
+        --sb-pos-height: 158px;
+    }
+}

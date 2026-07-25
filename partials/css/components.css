@@ -1,0 +1,179 @@
+:is(.person, .item) {
+    &.card {
+        width: 100%;
+        max-width: 20rem;
+        margin: 0 auto;
+        border: 1px solid var(--sb-line);
+        border-radius: var(--sb-radius);
+        background: var(--sb-card);
+        box-shadow: var(--sb-shadow);
+        overflow: hidden;
+        transition: transform .18s ease, box-shadow .18s ease;
+
+        &:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--sb-shadow-lift);
+        }
+    }
+
+    .card-img-top {
+        aspect-ratio: 4 / 3;
+        object-fit: cover;
+        background: var(--sb-img-bg);
+        border-radius: 0;
+    }
+
+    .card-body {
+        padding: 1.25rem 1.25rem 1.35rem;
+    }
+
+    .card-title {
+        font-size: 1.15rem;
+        font-weight: 800;
+        letter-spacing: -.015em;
+        margin-bottom: .35rem;
+    }
+
+    .btn-primary {
+        display: block;
+        width: 100%;
+        background: var(--sb-cash);
+        border-color: var(--sb-cash);
+        color: var(--sb-white);
+        padding: .6rem 1rem;
+
+        &:is(:hover, :focus) {
+            background: var(--sb-cash-dark);
+            border-color: var(--sb-cash-dark);
+            color: var(--sb-white);
+        }
+    }
+}
+
+.person .card-text {
+    color: var(--sb-muted);
+    font-size: .9rem;
+}
+
+.item {
+    position: relative;
+
+    .card-body {
+        position: relative;
+        
+        /* Perforation between the picture and the price, like a tear-off tag */
+        &::before {
+            content: "";
+            position: absolute;
+            inset: 0 0 auto 0;
+            border-top: 2px dashed var(--sb-line);
+        }
+    }
+
+    .btn-primary.is-pressed {
+        background: var(--sb-cash-dark);
+        transform: scale(.98);
+    }
+}
+
+/* Net worth */
+.sb-worth {
+    margin: .85rem 0 1.25rem;
+    padding-top: .85rem;
+    border-top: 1px dotted var(--sb-line);
+}
+
+.sb-worth__label {
+    display: block;
+    font-family: "Courier Prime", monospace;
+    font-size: .68rem;
+    font-weight: 700;
+    letter-spacing: .2em;
+    text-transform: uppercase;
+    color: var(--sb-muted);
+    margin-bottom: .15rem;
+}
+
+.sb-worth__value {
+    display: block;
+    font-size: clamp(1.9rem, 5vw, 2.35rem);
+    font-weight: 900;
+    line-height: 1;
+    letter-spacing: -.035em;
+    font-variant-numeric: tabular-nums;
+    color: var(--sb-ink);
+}
+
+.sb-worth__unit {
+    font-size: .46em;
+    font-weight: 700;
+    letter-spacing: .02em;
+    color: var(--sb-muted);
+    margin-left: .18em;
+}
+
+.sb-price {
+    font-family: "Courier Prime", monospace;
+    font-weight: 700;
+    font-size: 1.3rem;
+    letter-spacing: .02em;
+    font-variant-numeric: tabular-nums;
+    margin: .5rem 0 1rem;
+    color: var(--sb-ink);
+}
+
+.sb-desc {
+    min-height: 2.6em;
+}
+
+/* Counter of how many times this item was bought */
+.sb-count {
+    position: absolute;
+    top: .75rem;
+    right: .75rem;
+    z-index: 3;
+    min-width: 2.2rem;
+    padding: .2rem .5rem;
+    border-radius: 999px;
+    background: var(--sb-cash);
+    color: var(--sb-white);
+    font-family: "Courier Prime", monospace;
+    font-weight: 700;
+    font-size: .95rem;
+    text-align: center;
+    pointer-events: none;
+    box-shadow: 0 4px 12px var(--sb-shadow-cash);
+
+    &.is-hidden {
+        display: none;
+    }
+}
+
+/* Flying price slip on purchase */
+.sb-slip {
+    position: absolute;
+    left: 50%;
+    bottom: 3.5rem;
+    z-index: 4;
+    transform: translateX(-50%);
+    padding: .15rem .5rem;
+    border-radius: 6px;
+    background: var(--sb-ink);
+    color: var(--sb-led);
+    font-family: "Courier Prime", monospace;
+    font-weight: 700;
+    font-size: .95rem;
+    pointer-events: none;
+    animation: sb-slip-away .7s ease-out forwards;
+}
+
+@keyframes sb-slip-away {
+    from { opacity: 1; transform: translate(-50%, 0) rotate(-2deg); }
+    to   { opacity: 0; transform: translate(-50%, -3rem) rotate(-6deg); }
+}
+
+.btn {
+    border-radius: 10px;
+    font-weight: 700;
+    letter-spacing: .01em;
+}

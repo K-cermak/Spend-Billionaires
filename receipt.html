@@ -3,7 +3,7 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Spend Billionaires - Try spending money like a billionaire</title>
+    <title>Spend Billionaires - Receipt</title>
     <meta name="author" content="Karel Cermak">
     <meta name="description" content="Let's be a billionaire for a moment and try to spend their money.">
     <meta name='viewport' content='width=device-width, initial-scale=1'>
@@ -12,41 +12,37 @@
     <link rel='icon' type='image/png' href='https://cdn.karlosoft.com/cdn-data/ks/img/fav/png-white-transparent.png' />
 
     <script src='partials/js/config.js'></script>
-    <script>
-        enplatedSettingsCustom = {
-            useDarkMode : false,
-        };
-    </script>
     <script src='https://cdn.karlosoft.com/cdn-data/ks/script/gdpr-settings.js'></script>
     <script src='https://cdn.jsdelivr.net/gh/K-cermak/Enplated-Framework@enp-v3/enp-loader.min.js'></script>
 
-    <link rel='stylesheet' href='partials/css/basic.css' />
+    <link rel='stylesheet' href='partials/css/main.css' />
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-
-    <style>
-        body {
-            font-family: "Courier Prime", monospace;
-            font-weight: 400;
-            font-style: normal;
-            font-size: 1.2rem;
-        }
-        h2, h4 {
-            font-weight: 700;
-        }
-
-    </style>
 </head>
 
-<body class="d-flex flex-column min-vh-100 px-2">
+<body class="receipt-page">
 
-    <h2 class="p-3 pb-0">Receipt for <span class="selectedPersonName"></span>:</h2>
+    <div class="sb-receipt">
+        <div class="sb-receipt__head">
+            <p class="sb-receipt__shop">Spend Billionaires</p>
+            <p class="sb-receipt__meta">Everything dept. &middot; <span class="receiptDate"></span></p>
+            <p class="sb-receipt__customer">Customer: <span class="selectedPersonName"></span></p>
+        </div>
 
-    <div class="receiptItems px-3"></div>
+        <div class="receiptItems"></div>
 
-    <h4 class="my-3 mx-3">Total: $ <b class="totalPrice"></b></h4>
+        <div class="sb-receipt__total">
+            <span>Total</span>
+            <b>$ <span class="totalPrice">0</span></b>
+        </div>
+
+        <div class="sb-receipt__footer">
+            <div class="sb-barcode" aria-hidden="true"></div>
+            <p class="mb-0">Thank you for your purchase &middot; no refunds</p>
+        </div>
+    </div>
 
     <script src="partials/js/receipt.js"></script>
 </body>
